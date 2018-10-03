@@ -84,8 +84,6 @@ while loopOne != 0:
         ###            it should be the available number of items in the stock. Remember that
         ###            you need to inform the user of what happens.
         item_qty = int(input("Provide the quantity for item"))
-        while item_qty < user_quantity and item_qty < 0:
-            item_qty = int(input("You do not have that much to return \n provide the quantity for the item:"))
         if item_qty <= market_stock:
             if item_qty > 0:
                 market_stock = market_stock - item_qty
